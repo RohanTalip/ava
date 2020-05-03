@@ -14,7 +14,8 @@ exports.fixture = async () => {
 			AVA_EMIT_RUN_STATUS_OVER_IPC: 'this is an unsupported api'
 		},
 		cwd,
-		serialization
+		serialization,
+		stderr: 'inherit'
 	});
 
 	const stats = {
